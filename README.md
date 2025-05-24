@@ -62,34 +62,6 @@ CUB_200_2011/images/
 
 ---
 
-## 📊 Output
-
-- List of image paths.
-- Corresponding species labels.
-- Training and validation dataset split ready for model input.
-
----
-
-## 📌 Example Code
-
-```python
-import glob, os
-
-base_dir = "CUB_200_2011/images"
-image_paths = glob.glob(os.path.join(base_dir, "*", "*.jpg"))
-labels = [os.path.basename(os.path.dirname(path)).split('.', 1)[1] for path in image_paths]
-```
-
----
-
-## 🧠 Future Work
-
-- Train a convolutional neural network for classification.
-- Add data augmentation and preprocessing.
-- Evaluate performance using accuracy and confusion matrix.
-
----
-
 ## 📄 License
 
 This project is open-source and available under the [MIT License](LICENSE).
